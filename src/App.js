@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container } from 'semantic-ui-react';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+
+import CustomHeader from './Components/CustomHeader';
+import Home from './Pages/HomePage';
+import About from './Pages/About';
+import Baseball from './Pages/Baseball';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> to alter, Connor welcome to your new webpage.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Container>
+          <Router>
+            <div>
+              <CustomHeader/>
+                <Route exact path='/' component={Home}/>
+                <Route exact path='/about' component={About}/>
+                <Route exact path='/baseball' component={Baseball}/>
+            </div>
+          </Router>
+        </Container>
       </div>
     );
   }
 }
-
 export default App;
