@@ -4,7 +4,19 @@ class HomePage extends Component{
 	render(){
 		return(
 			<div>
-				HomePage
+				<Container fluid>
+					<Header as='h2'>Home Page</Header>
+					<p>
+					Welcome! This is my personal website to display all my accomplishments and info to the
+					general populace.
+					</p>
+					<p>
+					Filler stuff here
+					</p>
+					<p>
+					Extra break
+					</p>
+				</Container>
 			</div>
 		);
 	}

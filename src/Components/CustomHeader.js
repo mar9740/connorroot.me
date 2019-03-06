@@ -10,13 +10,14 @@ const menuLinks = [
     link: '/'
   },
   {
-    name: 'about',
-    link: '/about'
-  },
-  {
   	name: 'baseball',
   	link: '/baseball'
   },
+  {
+    name: 'about',
+    link: '/about'
+  },
+  
 ]
 
 const menuIcons = [
