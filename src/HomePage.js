@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container, Header } from 'semantic-ui-react';
 
 class HomePage extends Component{
 	render(){
