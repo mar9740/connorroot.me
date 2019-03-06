@@ -7,7 +7,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <p>
-            Edit to actualy make this shit work connor
+            Edit to actualy make this shit work connor 
           </p>
 
         </header>
